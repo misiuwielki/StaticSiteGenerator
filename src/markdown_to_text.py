@@ -151,7 +151,6 @@ def block_to_text(block):
     if block_type != BlockType.C:
         new_lines = new_lines.strip()
     else: 
-        print(repr(lines))
         return "\n".join(lines[1:-1]) + "\n"
     return new_lines
 
