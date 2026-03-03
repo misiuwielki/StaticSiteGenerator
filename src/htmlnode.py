@@ -11,7 +11,7 @@ class HTMLNode:
     def props_to_html(self):
         result = ""
         for key in self.props:
-            result += f"{key}={self.props[key]} "
+            result += f' {key}="{self.props[key]}"'
         return result
     
     def __eq__(self, other):
