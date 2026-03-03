@@ -10,7 +10,7 @@ def main():
         basepath = sys.argv[1]
     else:
         basepath = "/"
-    dir_path_public = "public"
+    dir_path_public = "docs"
     dir_path_static = "static"
     if os.path.exists(dir_path_public):
         shutil.rmtree(dir_path_public)
